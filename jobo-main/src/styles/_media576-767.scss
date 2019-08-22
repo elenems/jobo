@@ -1,0 +1,48 @@
+@media (min-width: 576px) and (max-width: 767px) {
+  .category > div {
+    width: 48%;
+  }
+  .home-body section,
+  .job-page section,
+  .company-page section,
+  .job-list-page section,
+  .comparing-page section {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  .profile-page > nav {
+    margin-right: 0px;
+  }
+  .profile-page {
+    grid-template: [row1-start] "header header header" auto [row1-end] [row2-start] ". nav section" auto [row2-end]/5% 25% auto;
+  }
+  .company-container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-column-gap: 5%;
+    grid-row-gap: 40px;
+  }
+  .auth-form {
+    width: 80%;
+  }
+
+  header {
+    flex-wrap: wrap;
+    div:first-child {
+      order: 1;
+    }
+    .search-bar {
+      order: 3;
+      margin-top: 20px;
+      form input {
+        min-width: 40vw;
+      }
+      .css-11uk2zs-indicatorSeparator {
+        background: none;
+      }
+    }
+    .navigation {
+      order: 2;
+    }
+  }
+}

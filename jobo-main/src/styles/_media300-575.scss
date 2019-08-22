@@ -1,0 +1,108 @@
+@media (min-width: 300px) and (max-width: 575px) {
+  .home-body section,
+  .job-page section,
+  .company-page section,
+  .job-list-page section,
+  .comparing-page section {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .category > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .filter-container {
+    display: inline-block;
+    margin-right: 0px;
+    margin-top: 20px;
+    width: 250px;
+    display: block;
+    .styled-button {
+      margin-top: 0px;
+    }
+  }
+
+  .page-navigation {
+    text-align: center;
+    margin-top: 20px;
+    .styled-button {
+      min-width: 85px;
+    }
+  }
+
+  .profile-page {
+    grid-template:
+      "header header header header header"
+      ". nav nav nav ."
+      ". section section section .";
+  }
+
+  .profile-page > nav {
+    margin-right: 0px;
+    border-right: 0px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    ul {
+      text-align: center;
+    }
+  }
+  .profile-page > nav ul li {
+    display: inline-block;
+    margin: 0px 15px;
+  }
+
+  .auth-form {
+    min-width: 270px;
+    width: 85%;
+    .flex-align {
+      grid-template-columns: 150px auto;
+    }
+  }
+  .company-container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-column-gap: 5%;
+    grid-row-gap: 40px;
+  }
+
+  header {
+    flex-wrap: wrap;
+    .css-2b097c-container,
+    .css-1ntxrfw-control,
+    .css-rg896e-control {
+      width: 90px;
+    }
+    .nav-link {
+      padding: 4px;
+    }
+    .auth-button {
+      min-width: 65px;
+      padding: 6px;
+      margin: 0px 6px;
+    }
+    .search-bar {
+      order: 3;
+      margin-top: 20px;
+      width: 90%;
+      form {
+        justify-content: center;
+      }
+      form input {
+        min-width: 40vw;
+      }
+      .css-11uk2zs-indicatorSeparator {
+        background: none;
+      }
+    }
+    .navigation {
+      order: 2;
+    }
+  }
+  .category svg {
+    font-size: 15vw;
+  }
+}
